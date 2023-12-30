@@ -1,0 +1,450 @@
+:root{
+  --primary-clr:#ffff;
+  --dark-clr:#000;
+
+}
+.dark-mode{
+  --dark-clr:#ffff;
+  --primary-clr:#000;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+svg{
+position: absolute;
+right: 20px;
+top:5px;
+fill: var(--primary-clr);
+width: 50px;
+}
+
+svg:hover{
+  animation: rotate 5s ;
+}
+
+.theme-toggle{
+background:none;
+border:none;
+}
+
+Body {
+     margin:0;
+     background:var(--dark-clr);
+     color:var(--primary-clr);
+     display: flex;
+     flex-wrap: wrap;
+     background-image: radial-gradient(rgba(225, 225, 225, 0.1) 9%, transparent 9%);
+     background-position: 0% 100%;
+     background-size: 12vmin 12vmin;
+     font-weight:bolder;
+     font-size: 20px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+}   
+
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:larger;
+  font-weight: 300;
+}
+
+nav{
+  margin-bottom: 50px;
+}
+.container {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+
+.the-lines{
+  display:none;
+  cursor: pointer;
+  padding: 10px;
+}
+      
+.line{
+  width: 25px;  
+  height: 3px;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out;
+}
+li{
+    display:inline-block;
+}
+
+li a {
+    text-decoration:none;
+    display: inline-block;
+    color:var(--primary-clr);
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size:25px;
+    padding: 10px 1rem;
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-clr);
+    transition: width.3s
+}
+
+.cool-link:hover::after{
+    width:100%;
+    transition: width.3s;
+}
+
+body, html {
+    height: 100%;
+    text-align: center;
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: row;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+ 
+}
+
+section h2 { 
+  color: white;
+}
+
+#welcome-section{
+  display:flex;
+  flex-direction:column;
+  margin-bottom: 20px;
+}
+
+#welcome-section>.job>h2{
+  color: aqua;
+  font-size: 150px;
+}
+.potrait{
+  margin-top:90px;
+  width: 50px;
+  height:50px;
+  border-radius:50px;
+  object-fit:cover;
+}
+
+.potrait:hover{
+  width: 150px;
+  height:150px;
+  border-radius:100px;
+  margin-top:30px;
+}
+
+.job{
+  display: flex;
+  flex-direction: column;
+
+}
+.job>h2{
+margin-bottom:0px;
+}
+.top-word{
+  margin-top:0px;
+  margin-right:450px;
+}
+
+.bottom-word{
+  margin-top:0px;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.me{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  width:100%;
+  margin-top:30px;
+}
+
+me{
+  padding: 5rem;
+}
+.me>h2{
+  margin-bottom: 2px;
+  color: var(--primary-clr);
+  animation:  drop 2s ease ;
+}
+.me>p{
+  line-height:1.6;
+  animation:  drop 3s ease ;
+}
+#work>h2{
+  margin-top: 50px;
+  text-align: left;
+  color: var(--primary-clr);
+}
+.work-contain{
+  width:100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.work-box{
+  width:30%;
+  border-left:grey 1px solid;
+  margin: 20px;
+}
+
+.work-box>p,h1{
+  padding: 1rem;
+  text-align:left;
+  word-spacing: 0;
+}
+
+.work-box>h1{
+  color: grey;
+  
+}
+
+.recent-work{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+
+.tile{
+  width: 95%;
+  border-bottom:1px solid grey;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.work-contain{
+  
+}
+
+.mini-tile{
+  height:300px;
+  width:400px;
+  background-color: blue;
+  margin-bottom:10px;
+}
+.mini-tile>img{
+  width: inherit;
+  height:inherit;
+  object-fit: cover;
+}
+.things-done{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: space-evenly; 
+}
+
+.thing{
+  width:40%;
+  
+}
+
+.right-thing{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-thing>div{
+  width: 100%;
+  border-bottom:1px solid grey;
+}
+
+.right-thing>div>p{
+  word-spacing:10px;
+  text-align: left;
+}
+.left-thing{
+  padding: 2rem;
+  text-align: left;
+}
+#contact{
+width:80%;
+margin: 0 auto;
+}
+
+#contact>div{
+  width:50% ;
+  text-align: left;
+  margin-right: 100px;
+}
+#contact>div>p>strong{
+  cursor: pointer;
+  color: aqua;
+}
+
+#contact>div>p>a{
+  text-decoration: none;
+  color:aqua;
+}
+
+footer{
+  border-top:1px solid grey;
+  width: 95% ;
+  margin:0 auto;
+  color: var(--primary-clr);
+}
+
+footer>section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .line {
+    width: 20px;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 10px; /* Add space between each navigation link */
+  }
+
+  li a {
+    padding: 10px 0;
+  }
+
+  #welcome-section > .Intro {
+    text-align: center;
+  }
+
+  #welcome-section > .job {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #about {
+    width: 90%;
+  }
+
+  #work > h2 {
+    margin-top: 30px;
+  }
+
+  .work-contain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-box {
+    width: 80%;
+    border-left: none;
+    margin: 20px 0;
+  }
+
+  .recent-work {
+    width: 90%;
+  }
+
+  .tile {
+    flex-direction: column;
+  }
+
+  .mini-tile {
+    width: 100%;
+    height: auto;
+  }
+
+  .things-done {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thing {
+    width: 80%;
+  }
+
+  .right-thing {
+    margin-top: 20px;
+  }
+
+  #contact {
+    width: 100%;
+  }
+
+  #contact > div {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+
+@keyframes drop{
+0%{
+transform: translateX(-80px);
+opacity: 0;
+}
+100%{
+  transform:translateX(0);
+  opacity:1;
+
+}
+
+}
+
+
+
+@keyframes rotate{
+ 
+  
+
+ 
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
